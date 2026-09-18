@@ -1,0 +1,71 @@
+{
+  "name": "dsh-answer-highlight",
+  "version": "0.1.0",
+  "description": "Answer annotation and highlighting plugin for DSH Web",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./text": "./src/text.js",
+    "./prompt": "./src/prompt.js",
+    "./annotations": "./src/annotations.js",
+    "./stream": "./src/stream.js",
+    "./host": "./src/host.js",
+    "./storage": "./src/storage.js",
+    "./service": "./src/service.js",
+    "./locate": "./src/locate.js",
+    "./highlight": "./src/highlight.js",
+    "./route": "./src/route.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "pics",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build:client": "node scripts/build-client.js",
+    "prepack": "npm run build:client && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "highlight",
+    "annotation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matcha-Eason/dsh-answer-highlight.git"
+  },
+  "homepage": "https://github.com/Matcha-Eason/dsh-answer-highlight#readme",
+  "bugs": {
+    "url": "https://github.com/Matcha-Eason/dsh-answer-highlight/issues"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-session"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}

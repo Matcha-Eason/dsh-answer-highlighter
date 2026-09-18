@@ -1,0 +1,14 @@
+# Local development
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Local development docs are not part of the published/user-facing repository content
+docs/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.*
