@@ -1,5 +1,5 @@
 {
-  "name": "dsh-answer-highlight",
+  "name": "dsh-answer-highlighter",
   "version": "0.1.0",
   "description": "Answer annotation and highlighting plugin for DSH Web",
   "type": "module",
@@ -45,11 +45,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Matcha-Eason/dsh-answer-highlight.git"
+    "url": "git+https://github.com/Matcha-Eason/dsh-answer-highlighter.git"
   },
-  "homepage": "https://github.com/Matcha-Eason/dsh-answer-highlight#readme",
+  "homepage": "https://github.com/Matcha-Eason/dsh-answer-highlighter#readme",
   "bugs": {
-    "url": "https://github.com/Matcha-Eason/dsh-answer-highlight/issues"
+    "url": "https://github.com/Matcha-Eason/dsh-answer-highlighter/issues"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"

@@ -21,7 +21,7 @@ export function apply(ctx, config = {}) {
     ?? join(
       process.env.DSH_HOME ?? join(homedir(), '.dsh'),
       'plugin-data',
-      'dsh-answer-highlight',
+      'dsh-answer-highlighter',
       'annotations',
     )
 

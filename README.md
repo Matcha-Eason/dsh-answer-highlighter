@@ -51,7 +51,7 @@ npm run build:client
 在 DSH 工作目录安装到 `web` profile：
 
 ```sh
-dsh plugin --profile web add github:Matcha-Eason/dsh-answer-highlight
+dsh plugin --profile web add github:Matcha-Eason/dsh-answer-highlighter
 ```
 
 ## 5. 快速开始
@@ -88,7 +88,7 @@ dsh plugin --profile web add github:Matcha-Eason/dsh-answer-highlight
 批注默认存储在：
 
 ```text
-$DSH_HOME/plugin-data/dsh-answer-highlight/annotations
+$DSH_HOME/plugin-data/dsh-answer-highlighter/annotations
 ```
 
 也可以用 `DSH_ANSWER_HIGHLIGHT_DATA` 指定其他目录。每个 Session 一个 JSONL 文件，每行对应一个 assistant 消息。空批注也会写一条记录，用来避免重复调用模型。
@@ -118,7 +118,7 @@ $DSH_HOME/plugin-data/dsh-answer-highlight/annotations
 ## 11. 卸载
 
 ```sh
-dsh plugin --profile web remove dsh-answer-highlight
+dsh plugin --profile web remove dsh-answer-highlighter
 ```
 
 如需彻底清理本地数据，再删除默认存储目录。

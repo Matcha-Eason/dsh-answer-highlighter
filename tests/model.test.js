@@ -29,7 +29,7 @@ test('generateAnnotations returns validated annotations', async () => {
       assert.ok(Array.isArray(options.messages[0].content))
       assert.equal(options.messages[0].content[0].type, 'text')
       assert.equal(options.messages[0].source.kind, 'plugin')
-      assert.equal(options.messages[0].source.plugin, 'dsh-answer-highlight')
+      assert.equal(options.messages[0].source.plugin, 'dsh-answer-highlighter')
       assert.ok(options.messages[0].content[0].text.includes('Question:'))
       assert.ok(options.messages[0].content[0].text.includes('请总结'))
       return textStream('[{"quote":"这句话是非常重要的内容。","kind":"key-point","note":"核心结论"}]')()

@@ -55,7 +55,7 @@ export async function generateAnnotations({
       id: randomUUID(),
       role: 'user',
       content: [{ type: 'text', text: prompt.user }],
-      source: { kind: 'plugin', plugin: 'dsh-answer-highlight' },
+      source: { kind: 'plugin', plugin: 'dsh-answer-highlighter' },
     }],
     system: prompt.system,
     maxTokens: maxOutputTokens,

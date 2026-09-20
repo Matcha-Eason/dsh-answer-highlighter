@@ -15,7 +15,7 @@ const result = await build({
 })
 const bundle = result.outputFiles[0].text
 const output = `window.__ModuleLoader__.load({
-  id: 'dsh-answer-highlight',
+  id: 'dsh-answer-highlighter',
   factory: (require) => {
     'use strict'
     var module = { exports: {} }
