@@ -1,5 +1,9 @@
 # DSH 回答批注高亮插件
 
+<p align="right">
+  <a href="./README.en-US.md">English</a> | 简体中文
+</p>
+
 给 DSH Web 的 AI 回复自动加重点、定义、警告和问题高亮。主回答照常流式输出，批注在回答完成后单独生成并渲染。
 
 ## 1. 它解决什么问题
@@ -8,11 +12,17 @@
 
 这个插件在回答完成后，**额外调用一次模型**，把当前回答里值得注意的片段标出来。默认调用 `deepseek-official/deepseek-flash`，这次调用只用于生成批注，不影响主回答，也不会改写原始会话日志。
 
-![亮色主题下的关键点和定义高亮示例](pics/example1.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Matcha-Eason/dsh-answer-highlighter/main/pics/example1.png" alt="亮色主题下的关键点和定义高亮示例" width="480">
+</p>
 
-![亮色主题下的警告高亮示例](pics/example2.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Matcha-Eason/dsh-answer-highlighter/main/pics/example2.png" alt="亮色主题下的警告高亮示例" width="480">
+</p>
 
-![暗色主题下的高亮示例](pics/dark_example.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Matcha-Eason/dsh-answer-highlighter/main/pics/dark_example.png" alt="暗色主题下的高亮示例" width="480">
+</p>
 
 ## 2. 功能
 
